@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>NorthEducation_API</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.19.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\Module_02\**" />
+    <Compile Remove="Services\Module_03\**" />
+    <Compile Remove="Services\Module_04\**" />
+    <Compile Remove="Services\Module_05\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Services\Module_02\**" />
+    <EmbeddedResource Remove="Services\Module_03\**" />
+    <EmbeddedResource Remove="Services\Module_04\**" />
+    <EmbeddedResource Remove="Services\Module_05\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Services\Module_02\**" />
+    <Content Remove="Services\Module_03\**" />
+    <Content Remove="Services\Module_04\**" />
+    <Content Remove="Services\Module_05\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Services\Module_02\**" />
+    <None Remove="Services\Module_03\**" />
+    <None Remove="Services\Module_04\**" />
+    <None Remove="Services\Module_05\**" />
+  </ItemGroup>
+
+</Project>

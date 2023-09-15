@@ -1,4 +1,4 @@
-﻿namespace NorthEducationAPI.Models
+﻿namespace Anonymous.Models
 {
     using Newtonsoft.Json;
 
